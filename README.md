@@ -38,7 +38,9 @@ Assignment_Agnos-Jarasporn
 
 1. Install Python
 2. Install Robot Framework
-3. Run the test
-4. Test report will be generated automatically:
+  - pip install robotframework
+  - pip install robotframework-seleniumlibrary
+4. Run the test
+5. Test report will be generated automatically:
 - report.html
 - log.html
