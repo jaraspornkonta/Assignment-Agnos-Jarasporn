@@ -22,12 +22,15 @@ The automation test cases include:
 Assignment_Agnos-Jarasporn
 
 ── resources
+
    └── keywords.robot
 
 ── tests
+
    └── TC_Agnos.robot
 
 ── variables
+
    └── variables.robot
 
 
