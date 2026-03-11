@@ -23,15 +23,15 @@ Assignment_Agnos-Jarasporn
 
 ── resources
 
-   └── keywords.robot
+      └── keywords.robot
 
 ── tests
 
-   └── TC_Agnos.robot
+      └── TC_Agnos.robot
 
 ── variables
 
-   └── variables.robot
+      └── variables.robot
 
 
 ## How to Run the Tests
