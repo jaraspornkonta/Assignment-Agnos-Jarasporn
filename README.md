@@ -41,6 +41,8 @@ Assignment_Agnos-Jarasporn
   - pip install robotframework
   - pip install robotframework-seleniumlibrary
 4. Run the test
+  - cd Assignment_Agnos-Jarasporn
+  - robot tests/TC_Agnos.robot
 5. Test report will be generated automatically:
 - report.html
 - log.html
