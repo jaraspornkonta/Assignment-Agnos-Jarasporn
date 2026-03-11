@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20260311 16:47:03.259" rpa="false" schemaversion="4">
+<suite id="s1" name="TC Agnos" source="c:\Users\bamza\Downloads\Assignment_Agnos-Jarasporn\tests\TC_Agnos.robot">
+<test id="s1-t1" name="Logout Successfully" line="34">
+<kw name="Open Browser To Login Page" library="keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20260311 16:47:03.482" level="INFO">Opening browser 'chrome' to base url 'https://dev.app.agnoshealth.com/ai_dashboard'.</msg>
+<status status="PASS" starttime="20260311 16:47:03.481" endtime="20260311 16:47:07.558"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20260311 16:47:07.559" endtime="20260311 16:47:07.588"/>
+</kw>
+<status status="PASS" starttime="20260311 16:47:03.481" endtime="20260311 16:47:07.590"/>
+</kw>
+<kw name="Login To System" library="keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@type="email"]</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260311 16:47:07.591" level="INFO">Typing text 'test@gmail.com' into text field 'xpath=//input[@type="email"]'.</msg>
+<status status="PASS" starttime="20260311 16:47:07.591" endtime="20260311 16:47:07.812"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@type="password"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260311 16:47:07.812" level="INFO">Typing text '12345' into text field 'xpath=//input[@type="password"]'.</msg>
+<status status="PASS" starttime="20260311 16:47:07.812" endtime="20260311 16:47:07.923"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath=//button[.//div[text()="Sign in"]]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20260311 16:47:07.923" endtime="20260311 16:47:07.948"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[.//div[text()="Sign in"]]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260311 16:47:07.948" level="INFO">Clicking element 'xpath=//button[.//div[text()="Sign in"]]'.</msg>
+<status status="PASS" starttime="20260311 16:47:07.948" endtime="20260311 16:47:07.999"/>
+</kw>
+<status status="PASS" starttime="20260311 16:47:07.590" endtime="20260311 16:47:08.000"/>
+</kw>
+<kw name="Logout From System" library="keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//div[text()="Log Out"]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20260311 16:47:08.007" endtime="20260311 16:47:08.448"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//div[text()="Log Out"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260311 16:47:08.448" level="INFO">Clicking element 'xpath=//div[text()="Log Out"]'.</msg>
+<status status="PASS" starttime="20260311 16:47:08.448" endtime="20260311 16:47:08.506"/>
+</kw>
+<status status="PASS" starttime="20260311 16:47:08.007" endtime="20260311 16:47:08.508"/>
+</kw>
+<status status="PASS" starttime="20260311 16:47:03.480" endtime="20260311 16:47:08.508"/>
+</test>
+<status status="PASS" starttime="20260311 16:47:03.264" endtime="20260311 16:47:08.509"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC Agnos">TC Agnos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
