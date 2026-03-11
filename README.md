@@ -20,15 +20,15 @@ The automation test cases include:
 
 ## Project Structure
 Assignment_Agnos-Jarasporn
-│
-├── resources
-│   └── keywords.robot
-│
-├── tests
-│   └── TC_Agnos.robot
-│
-├── variables
-│   └── variables.robot
+
+── resources
+   └── keywords.robot
+
+── tests
+   └── TC_Agnos.robot
+
+── variables
+   └── variables.robot
 
 
 ## How to Run the Tests
